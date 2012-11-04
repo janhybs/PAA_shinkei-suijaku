@@ -1,0 +1,64 @@
+/* 
+    Document   : main
+    Created on : 31.10.2012, 20:46:31
+    Author     : Hans
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+}
+
+#shinkei-suijaku li {
+    display: inline-block;
+    float: left;
+    border: 3px solid #333;
+    border-radius: 9px;
+    position: relative;
+    margin: 5px;
+}
+
+#shinkei-suijaku .solved {
+    border: 3px solid yellowgreen;
+    border-radius: 9px;
+}
+
+#shinkei-suijaku .large div, #shinkei-suijaku .small div {
+    border-radius: 6px;
+    position: absolute;
+    border: 1px solid #EFEFEF;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#shinkei-suijaku .large div {
+    background: url('../imgs/pairs_large.png');
+}
+
+#shinkei-suijaku .small div {
+    background: url('../imgs/pairs_small.png');
+}
+
+.large, .large > div {
+    width: 128px;
+    height: 128px; 
+}
+
+.small, .small > div {
+    width: 64px;
+    height: 64px;
+}
